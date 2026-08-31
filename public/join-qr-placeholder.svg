@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">Recruitment QR code placeholder</title>
+  <desc id="desc">Replace this file with the recruitment group QR code.</desc>
+  <rect width="240" height="240" fill="#f2f0e8"/>
+  <g fill="#090a09">
+    <path d="M16 16h64v64H16zm12 12v40h40V28zM40 40h16v16H40zM160 16h64v64h-64zm12 12v40h40V28zM184 40h16v16h-16zM16 160h64v64H16zm12 12v40h40v-40zM40 184h16v16H40z"/>
+    <path d="M96 16h16v16H96zm32 0h16v32h-16zm16 16h16v16h-16zM96 48h16v32H96zm16 16h16v16h-16zm16 0h16v16h-16zm32 32h16v16h-16zm16 0h16v16h-16zm32 0h16v32h-16zM96 96h16v16H96zm32 0h16v16h-16zm16 0h16v32h-16zm16 16h16v16h-16zm16 0h16v16h-16zM96 128h16v16H96zm16 16h16v16h-16zm16 0h16v32h-16zm32 0h16v16h-16zm16 0h16v16h-16zm32 0h16v16h-16zM96 176h16v16H96zm16 16h16v32h-16zm16-16h16v16h-16zm32 0h16v32h-16zm16 16h16v16h-16zm16-16h16v16h-16zm32 0h16v32h-16z"/>
+  </g>
+  <rect x="86" y="86" width="68" height="68" fill="#d7ff3f"/>
+  <text x="120" y="113" fill="#090a09" font-family="monospace" font-size="10" font-weight="700" text-anchor="middle">REPLACE</text>
+  <text x="120" y="129" fill="#090a09" font-family="monospace" font-size="10" font-weight="700" text-anchor="middle">WITH QR</text>
+</svg>
