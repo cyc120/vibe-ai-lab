@@ -125,15 +125,35 @@ export default function Recruitment() {
             <div className="join-qr-area">
               <div className="join-qr-grid">
                 <div className="join-qr-card">
-                  <button className="join-qr magnetic" type="button" onClick={() => setZoomedQr('group')} aria-label="Enlarge recruitment group QR code">
+                  <a
+                    className="join-qr magnetic"
+                    href={publicAsset('join-qr.jpg')}
+                    target="_blank"
+                    rel="noreferrer"
+                    onClick={event => {
+                      event.preventDefault()
+                      setZoomedQr('group')
+                    }}
+                    aria-label="Enlarge recruitment group QR code"
+                  >
                     <img src={publicAsset('join-qr.jpg')} alt="Recruitment group QR code" />
-                  </button>
+                  </a>
                   <span className="join-qr-copy"><strong>GROUP QR</strong><span>SCAN TO JOIN</span><small>{displayGroup(site.qqGroup)}</small></span>
                 </div>
                 <div className="join-qr-card">
-                  <button className="join-qr magnetic" type="button" onClick={() => setZoomedQr('wechat')} aria-label="Enlarge personal WeChat QR code">
+                  <a
+                    className="join-qr magnetic"
+                    href={publicAsset('wechat-qr.jpg')}
+                    target="_blank"
+                    rel="noreferrer"
+                    onClick={event => {
+                      event.preventDefault()
+                      setZoomedQr('wechat')
+                    }}
+                    aria-label="Enlarge personal WeChat QR code"
+                  >
                     <img src={publicAsset('wechat-qr.jpg')} alt="Personal WeChat QR code" />
-                  </button>
+                  </a>
                   <span className="join-qr-copy"><strong>WECHAT QR</strong><span>SCAN TO CONNECT</span><small>{displayValue(site.contact.wechat)}</small></span>
                 </div>
               </div>
