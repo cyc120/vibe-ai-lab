@@ -1,8 +1,10 @@
 import { ArrowDown, ArrowUpRight } from 'lucide-react'
+import InteractiveParticles from './InteractiveParticles'
 
 export default function Hero() {
   return (
     <section id="top" className="hero-section" aria-labelledby="hero-title">
+      <InteractiveParticles className="hero-particles" count={28} />
       <div className="hero-microcopy top-left">VIBE AI LAB / 2026<br /><span>HUMAN <b>x</b> AI</span></div>
       <div className="hero-microcopy status-box"><span className="status-dot" /> SYSTEM STATUS<br /><strong>AI LAB ONLINE</strong><small>NEW MEMBER&nbsp; 0 -&gt; INF</small></div>
       <div className="hero-copy">

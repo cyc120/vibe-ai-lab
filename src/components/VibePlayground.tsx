@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import type { FormEvent } from 'react'
 import { ArrowUpRight, RotateCcw, Send, Sparkles, TerminalSquare } from 'lucide-react'
 import ColorField from './ColorField'
+import InteractiveParticles from './InteractiveParticles'
 
 type Mode = 'clean' | 'tech' | 'rebuild'
 type Modification = { label: string; log: string[]; mode?: Mode; animation?: boolean; button?: boolean }
@@ -120,7 +121,7 @@ export default function VibePlayground() {
       <ColorField className="play-color-field" colors="rgba(114, 243, 229, .48), rgba(215, 255, 63, .38)" />
       <div className="section-heading">
         <p className="section-kicker">PLAYGROUND 01 <span>/</span> NO CODE REQUIRED</p>
-        <h2 id="play-title">30 秒体验一次<br /><em>VIBE CODING</em><span className="blink-cursor">_</span></h2>
+        <h2 id="play-title"><span className="play-title-zh">30 秒体验一次</span><br /><em>VIBE CODING</em><span className="blink-cursor">_</span></h2>
         <p className="section-intro">不会写代码？没关系。告诉 AI 你想要什么，剩下的交给它。</p>
       </div>
       <div className={`code-lab ${isComplete ? 'is-complete' : ''}`}>
@@ -129,6 +130,7 @@ export default function VibePlayground() {
           <div className="preview-pane">
             <div className="pane-label"><span>LIVE PREVIEW</span><span className="pulse">LIVE</span></div>
             <div className={`site-preview ${mode} ${animated ? 'is-floating' : ''}`}>
+              <InteractiveParticles className="playground-particles" count={16} />
               <div className="stage-orbit" aria-hidden="true" /><span className="stage-number" aria-hidden="true">01</span><span className="stage-axis" aria-hidden="true">X / IMAGINE<br />Y / SHIP</span>
               <div className="mock-browser"><div className="mock-nav"><b>{mode === 'clean' ? 'my website' : 'future.exe'}</b><span>about&nbsp;&nbsp;work&nbsp;&nbsp;hello</span></div><main><p>{mode === 'clean' ? 'WELCOME TO MY PAGE' : 'INVENT THE NEXT THING'}</p><h3>{mode === 'clean' ? 'HELLO WORLD' : mode === 'tech' ? 'HELLO, FUTURE.' : 'MAKE IT WEIRD.'}</h3><small>{mode === 'clean' ? 'a very ordinary internet card' : 'built from a sentence and a little nerve'}</small>{hasButton && <button type="button" className="mock-ai-button"><Sparkles size={14} /> ASK THE VOID</button>}</main><div className="mock-footer"><span>2026</span><span>made with ideas</span></div></div>
             </div>
