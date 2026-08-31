@@ -1,6 +1,6 @@
-# MOOC AI LAB
+# VIBE AI LAB
 
-MOOC AI LAB recruitment site, built with React, TypeScript, and Vite. It is a single-page site that uses hash anchors, so no client-side router or rewrite rule is required for section navigation.
+VIBE AI LAB recruitment site, built with React, TypeScript, and Vite. It is a single-page site that uses hash anchors, so no client-side router or rewrite rule is required for section navigation.
 
 ## Local Development
 

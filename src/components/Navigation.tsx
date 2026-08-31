@@ -4,7 +4,7 @@ import { site } from '../config/site'
 export default function Navigation() {
   return (
     <header className="navigation">
-      <a className="brand" href="#top" aria-label="MOOC AI LAB home"><span className="brand-mark">&gt;_</span> MOOC AI LAB</a>
+      <a className="brand" href="#top" aria-label="VIBE AI LAB home"><span className="brand-mark">&gt;_</span> VIBE AI LAB</a>
       <nav aria-label="Main navigation">
         <a href="#about">01 / ABOUT</a>
         <a href="#play">02 / PLAY</a>

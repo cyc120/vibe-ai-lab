@@ -1,5 +1,5 @@
 export const site = {
-  name: 'MOOC AI LAB',
+  name: 'VIBE AI LAB',
   year: '2026',
 
   // Public-facing links. Update these values before each recruitment cycle.

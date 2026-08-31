@@ -41,7 +41,7 @@ export default function VibePlayground() {
   const [logs, setLogs] = useState<TerminalLog[]>(() => {
     const time = formatTerminalTime()
     return [
-      { id: 0, time, message: 'initializing MOOC CODEX...', kind: 'output' },
+      { id: 0, time, message: 'initializing VIBE CODEX...', kind: 'output' },
       { id: 1, time, message: 'waiting for your imagination_', kind: 'output' },
     ]
   })
@@ -135,7 +135,7 @@ export default function VibePlayground() {
             {isComplete && <div className="congrats"><Sparkles size={20} /> <div><b>CONGRATULATIONS!</b><span>YOU JUST DID VIBE CODING.</span></div><a href="#battle">NEXT LEVEL <ArrowUpRight size={16} /></a></div>}
           </div>
           <div className="terminal-pane">
-            <div className="pane-label"><span><TerminalSquare size={14} /> MOOC CODEX</span><span className="terminal-status">{isProcessing ? 'PROCESSING' : 'CONNECTED'} / {currentTime}</span></div>
+            <div className="pane-label"><span><TerminalSquare size={14} /> VIBE CODEX</span><span className="terminal-status">{isProcessing ? 'PROCESSING' : 'CONNECTED'} / {currentTime}</span></div>
             <div className="terminal-output" aria-live="polite">{logs.map(log => <p key={log.id} className={log.kind}><time dateTime={log.time}>[{log.time}]</time> {log.message}</p>)}<span className="terminal-caret">_</span></div>
             <div className="quick-prompts">{prompts.map(prompt => <button key={prompt.label} type="button" onClick={() => apply(prompt)} disabled={isProcessing}>{prompt.label}</button>)}</div>
             <form className="terminal-input" onSubmit={submit}><span>&gt;</span><input value={input} onChange={event => setInput(event.target.value)} placeholder="告诉 AI，你想怎么修改这个网页..." aria-label="Describe a webpage change" disabled={isProcessing} /><button aria-label="Send prompt" type="submit" disabled={isProcessing}><Send size={18} /></button></form>

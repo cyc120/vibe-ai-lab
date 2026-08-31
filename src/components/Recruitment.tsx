@@ -69,7 +69,7 @@ export default function Recruitment() {
       <ColorField className="contact-color-field" colors="rgba(114, 243, 229, .28), rgba(215, 255, 63, .26)" />
       <div className="contact-grid">
         <div className="contact-copy">
-          <p className="section-kicker">MOOC AI LAB <span>/</span> CONTACT + JOIN US</p>
+          <p className="section-kicker">VIBE AI LAB <span>/</span> CONTACT + JOIN US</p>
           <h2 id="join-title">LET&apos;S<br />BUILD<br />SOMETHING<br /><em>COOL.</em></h2>
           <p className="contact-lede">下一位 AI Builder，也许就是你。</p>
           <p className="contact-subcopy">零基础也欢迎。<br />只要你愿意学习、折腾、Build。</p>
@@ -164,7 +164,7 @@ export default function Recruitment() {
       </div>
 
       <footer className="contact-footer">
-        <p>MOOC AI LAB<br />2026 RECRUITMENT</p>
+        <p>VIBE AI LAB<br />2026 RECRUITMENT</p>
         <div>
           <span>SYSTEM STATUS</span>
           <strong>RECRUITMENT: OPEN</strong>
